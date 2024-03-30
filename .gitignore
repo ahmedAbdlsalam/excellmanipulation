@@ -4,3 +4,6 @@
 #ignore all xslx files
 *.xlsx
 
+*.exe
+
+*.cfg
