@@ -35,7 +35,7 @@ def process_excel(input_file, column_name):
             # Write the filtered rows to the output Excel file
             with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
                 # Write the first row of the original sheet
-                df.head(1).to_excel(writer, index=False, header=False)
+                df.head(0).to_excel(writer, index=False, header=False)
                 # Write the filtered rows
                 filtered_rows.to_excel(writer, index=False, header=False)
 
